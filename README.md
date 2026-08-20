@@ -29,7 +29,7 @@ Future<void> load() async {
 Cookie values can contain commas within them. In fact, the `Expires` value is spec'd to have one in it. Let's say you get back the cookies from the server:
 
 ```
-set-cookie: foo=bar; Expires=Expires=Fri, 20 Aug 2027 00:55:08 GMT
+set-cookie: foo=bar; Expires=Expires=Fri, 20 Aug 2027 00:55:08 GMT; HttpOnly
 set-cookie: commas=a,b,c,d; HttpOnly
 ```
 
@@ -45,6 +45,7 @@ Try to do a `value.split(',')` and you get:
 [
   'foo=bar; Expires=Expires=Fri',
   '20 Aug 2027 00:55:08 GMT',
+  'HttpOnly',
   'commas=a',
   'b',
   'c',

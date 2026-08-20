@@ -1,7 +1,7 @@
 name: 'http_cookie_parser'
 description: 'Parser that reads and splits the set-cookie comma joined value into actual separate cookies.'
 homepage: 'https://github.com/islandlifetechnologies/http_cookie_parser'
-version: 1.0.0
+version: 1.0.0+2
 
 environment:
   sdk: ^3.12.0

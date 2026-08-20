@@ -1,11 +1,15 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
+- [Introduction](#introduction)
 - [Usage](#usage)
 - [Why is this necessary?](#why-is-this-necessary)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Introduction
 
 Parser for the comma joined `set-header` cookie header that the [http] package gives back. The `CookieParser` will accept that singular header value and then attempt to parse it back into the original separated values.
 
